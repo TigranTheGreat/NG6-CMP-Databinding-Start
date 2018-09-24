@@ -3,6 +3,7 @@
   <hr>
   <div class="row">
     <div class="col-xs-12">
+      <button class="btn btn-danger" (click)="onDestroyFirst()">Destroy 1<sup>st</sup> Component</button>
       <app-server-element *ngFor="let serverElement of serverElements" [data]="serverElement">
         <strong *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement.content }}</strong>
         <em *ngIf="serverElement.type === 'blueprint'">{{ serverElement.content }}</em>
